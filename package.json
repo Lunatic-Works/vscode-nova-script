@@ -19,7 +19,7 @@
         "languages": [{
             "id": "novascript",
             "aliases": ["Nova Script", "novascript"],
-            "extensions": [".novas"],
+            "extensions": [".nova.txt"],
             "configuration": "./language-configuration.json"
         }],
         "grammars": [{
