@@ -1,0 +1,40 @@
+{
+    "name": "vscode-nova-script",
+    "displayName": "Nova Script for VS Code",
+    "description": "Syntax highlighting and intellisense for scripts in Nova AVG Engine",
+    "publisher": "zhouhy",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.31.0"
+    },
+    "categories": [
+        "Programming Languages",
+        "Snippets"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "novascript",
+            "aliases": ["Nova Script", "novascript"],
+            "extensions": [".novas"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "novascript",
+            "scopeName": "text.novascript",
+            "path": "./syntaxes/novascript.tmLanguage.json",
+			"embeddedLanguages": {
+                "meta.embedded.block.lua": "lua"				
+			}
+        }],
+        "snippets": [
+			{
+				"language": "lua",
+				"path": "./snippets/lua.json"
+			},
+			{
+				"language": "novascript",
+				"path": "./snippets/novascript.json"
+			}
+		]
+    }
+}
