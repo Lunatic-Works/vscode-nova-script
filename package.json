@@ -15,6 +15,7 @@
         "Programming Languages",
         "Snippets"
     ],
+    "main": "./src/main",
     "contributes": {
         "languages": [{
             "id": "novascript",
