@@ -16,6 +16,9 @@
         "Snippets"
     ],
     "main": "./src/main",
+    "activationEvents": [
+        "onLanguage:novascript"
+    ],
     "contributes": {
         "languages": [{
             "id": "novascript",
