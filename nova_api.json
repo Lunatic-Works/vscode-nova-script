@@ -1,14 +1,232 @@
 {
+    "//script_loader":
+    {
+        "sample": "Assets/Resources/Scenarios/tut01.txt"
+    },
     "label":
     {
-        "zh-cn": ""
+        "zh-cn": "节点名称(key, display_name)"
     },
-    "box_hide_show":
+    "jump_to":
     {
-        "zh-cn": "开关box"
+        "zh-cn": "设置跳转(dest)"
+    },
+    "branch":
+    {
+        "zh-cn": "设置剧情分支(branches)"
+    },
+    "is_chapter":
+    {
+        "zh-cn": "设置为章节:跳到上一个/下一个章节时会在这个节点停止，但是这个节点不一定显示在章节选择界面"
+    },
+    "is_start":
+    {
+        "zh-cn": "设置开始节点:这个节点会显示在章节选择界面"
+    },
+    "is_unlocked_start":
+    {
+        "zh-cn": "设置一开始就解锁的开始节点:同时会设置is_chapter(),在标题界面点击“开始游戏”时，如果只有一个开始节点已经解锁，就会跳过章节选择界面，直接进入游戏"
+    },
+    "is_end":
+    {
+        "zh-cn": "设置结局"
+    },
+
+    "//graphics":
+    {
+        "sample": "Assets/Resources/Scenarios/tut02.txt"
+    },
+    "show":
+    {
+        "zh-cn": "显示图像(无动画)"
+    },
+    "hide":
+    {
+        "zh-cn": "隐藏图像(无动画)"
+    },
+
+    "//audio":
+    {
+        "sample": "Assets/Resources/Scenarios/tut03.txt"
+    },
+    "sound":
+    {
+        "zh-cn": "播放音效"
+    },
+    "say":
+    {
+        "zh-cn": "播放语音"
+    },
+    "play":
+    {
+        "zh-cn": "播放音乐"
+    },
+    "volume":
+    {
+        "zh-cn": "改变音量/anim:动画改编音量"
+    },
+    "fade_in":
+    {
+        "zh-cn": "anim:动画淡入音乐"
+    },
+    "fade_out":
+    {
+        "zh-cn": "anim:动画淡出音乐"
+    },
+
+
+    "//dialogue":
+    {
+        "sample": "Assets/Resources/Scenarios/tut04.txt"
+    },
+    "stop_auto_ff":
+    {
+        "zh-cn": "停止自动和快进模式"
+    },
+    "stop_ff":
+    {
+        "zh-cn": "停止快进模式"
+    },
+    "force_step":
+    {
+        "zh-cn": "跳到下一条对话"
+    },
+    "set_box":
+    {
+        "zh-cn": "设置对话框样式"
     },
     "new_page":
     {
         "zh-cn": "清空当前页"
+    },
+    "new_line":
+    {
+        "zh-cn": "换行"
+    },
+    "text_delay":
+    {
+        "zh-cn": "延迟文本出现"
+    },
+    "text_duration":
+    {
+        "zh-cn": "设置文本动画时长"
+    },
+    "box_hide_show":
+    {
+        "zh-cn": "隐藏对话框一段时间后再出现"
+    },
+
+    "//Animation":
+    {
+        "sample": "Assets/Resources/Scenarios/tut05.txt"
+    },
+    "anim":
+    {
+        "zh-cn": "动画命令前缀"
+    },
+    "anim_hold":
+    {
+        "zh-cn": "持续动画命令前缀"
+    },
+    "_and":
+    {
+        "zh-cn": "可以让下一段动画与上一段动画同时开始"
+    },
+    "stop":
+    {
+        "zh-cn": "可以停止一组动画"
+    },
+    "wait":
+    {
+        "zh-cn": "动画等待"
+    },
+    "wait_all":
+    {
+        "zh-cn": "动画等待另一组动画播放结束"
+    },
+    "action":
+    {
+        "zh-cn": "动画执行代码，如果代码只有一个函数，就把函数名和参数当作action的参数，比如anim:action(show, bg, 'room')"
+    },
+    "loop":
+    {
+        "zh-cn": "动画等待另一组动画播放结束"
+    },
+    "move":
+    {
+        "zh-cn": "移动 "
+    },
+    "tint":
+    {
+        "zh-cn": "改变颜色 "
+    },
+
+    "//transition":
+    {
+        "sample": "Assets/Resources/Scenarios/tut06.txt"
+    },
+    "trans":
+    {
+        "zh-cn": "转场——同时淡出淡入"
+    },
+    "trans2":
+    {
+        "zh-cn": "转场——先淡出后淡出"
+    },
+    "vfx":
+    {
+        "zh-cn": "特效"
+    },
+    
+    "//video":
+    {
+        "sample": "Assets/Resources/Scenarios/test_video.txt"
+    },
+    "video_play_custom":
+    {
+        "zh-cn": "播放视频"
+    },
+
+    "//variables":
+    {
+        "sample": "Assets/Resources/Scenarios/test_variables.txt & test_global_variable.txt"
+    },
+    
+    "//alert":
+    {
+        "sample": "Assets/Resources/Scenarios/tut04.txt"
+    },
+    "alert":
+    {
+        "zh-cn": "显示警告弹窗"
+    },
+    "notify":
+    {
+        "zh-cn": "角落显示通知"
+    },
+    
+    "//auto_voice":
+    {
+        "sample": "Assets/Resources/Scenarios/ch1.txt .. ch4.txt"
+    },
+    "auto_voice_on":
+    {
+        "zh-cn": "开启自动语音"
+    },
+    "auto_voice_off":
+    {
+        "zh-cn": "关闭自动语音"
+    },
+    "auto_voice_off_all":
+    {
+        "zh-cn": "关闭所有角色的自动语音"
+    },
+    "set_auto_voice_delay":
+    {
+        "zh-cn": "给这条对话的自动语音设置延时"
+    },
+    "auto_voice_skip":
+    {
+        "zh-cn": "跳过这条对话的自动语音"
     }
 }
