@@ -5,7 +5,8 @@
     },
     "label":
     {
-        "zh-cn": "节点名称(key, display_name)"
+        "zh-cn": "节点名称(key, display_name)",
+        "ja": "ノード名"
     },
     "jump_to":
     {

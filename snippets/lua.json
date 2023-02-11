@@ -15,6 +15,22 @@
 		],
 		"description": "清空当前页"
 	},
+	"new_line": {
+		"prefix": "new_line",
+		"body": [
+			"new_line()",
+			"$0"
+		],
+		"description": "换行"
+	},
+	"text_delay": {
+		"prefix": "text_delay",
+		"body": [
+			"text_delay(${1:time})",
+			"$0"
+		],
+		"description": "延迟文本出现"
+	},
 	"set_dialogue_update_mode": {
 		"prefix": "set_dialogue_update_mode",
 		"body": [
@@ -87,6 +103,14 @@
 		],
 		"description": "跳转到指定标签"
 	},
+	"branch": {
+		"prefix": "branch",
+		"body": [
+			"branch('${1:dest}')",
+			"$0"
+		],
+		"description": "设置剧情分支"
+	},
 	"is_start": {
 		"prefix": "is_start",
 		"body": [
@@ -102,6 +126,14 @@
 			"$0"
 		],
 		"description": "将指定标签定义为游戏默认起点"
+	},
+	"is_unlocked_start": {
+		"prefix": "is_unlocked_start",
+		"body": [
+			"is_unlocked_start('${1:name}')",
+			"$0"
+		],
+		"description": "设置一开始就解锁的开始节点"
 	},
 	"is_end": {
 		"prefix": "is_end",
@@ -142,5 +174,117 @@
 			"$0"
 		],
 		"description": "播放声音"
+	},
+	"say": {
+		"prefix": "say",
+		"body": [
+			"say(${1:obj}, '${2:audio_name}', ${3:delay}, ${4:override_auto_voice})",
+			"$0"
+		],
+		"description": "播放语音"
+	},
+	"play": {
+		"prefix": "play",
+		"body": [
+			"play(${1:obj}, '${2:audio_name}', ${3:volume})",
+			"$0"
+		],
+		"description": "播放音乐"
+	},
+	"volume": {
+		"prefix": "volume",
+		"body": [
+			"volume(${1:obj}, ${2:value}, ${3:duration})",
+			"$0"
+		],
+		"description": "动画改变音量"
+	},
+	"fade_in": {
+		"prefix": "fade_in",
+		"body": [
+			"fade_in(${1:obj}, '${2:audio_name}', ${3:volume}, ${4:duration})",
+			"$0"
+		],
+		"description": "动画淡入音乐"
+	},
+	"fade_out": {
+		"prefix": "fade_out",
+		"body": [
+			"fade_out(${1:obj}, ${2:duration})",
+			"$0"
+		],
+		"description": "动画淡出音乐"
+	},
+	"wait": {
+		"prefix": "wait",
+		"body": [
+			"wait(${1:duration})",
+			"$0"
+		],
+		"description": "动画等待"
+	},
+	"wait_all": {
+		"prefix": "wait_all",
+		"body": [
+			"wait_all(${1:wrap_anim})",
+			"$0"
+		],
+		"description": "动画等待另一组动画播放结束"
+	},
+	"action": {
+		"prefix": "action",
+		"body": [
+			"action(${1:function_name}, ${2:params})",
+			"$0"
+		],
+		"description": "执行指定函数，第一参数为函数名，之后为函数的参数，比如anim:action(show, bg, 'room')"
+	},
+	"tint": {
+		"prefix": "tint",
+		"body": [
+			"tint(${1:obj}, ${2:color}, ${3:duration}, ${4:easing})",
+			"$0"
+		],
+		"description": "动画改变颜色"
+	},
+	"trans": {
+		"prefix": "trans",
+		"body": [
+			"trans(${1:obj}, '${2:image_name}', ${3:shader_layer}, ${4:times}, ${5:properties}, ${6:color2})",
+			"$0"
+		],
+		"description": "第一类转场"
+	},
+	"trans2": {
+		"prefix": "trans2",
+		"body": [
+			"trans2(${1:obj}, '${2:image_name}', ${3:shader_layer}, ${4:times}, ${5:properties}, ${6:times2}, ${7:properties2}, ${8:color2})",
+			"$0"
+		],
+		"description": "第二类转场"
+	},
+	"video_play_custom": {
+		"prefix": "video_play_custom",
+		"body": [
+			"video_play_custom('${1:video_name}')",
+			"$0"
+		],
+		"description": "播放视频"
+	},
+	"alert": {
+		"prefix": "alert",
+		"body": [
+			"alert('${1:text}')",
+			"$0"
+		],
+		"description": "显示警告弹窗"
+	},
+	"notify": {
+		"prefix": "notify",
+		"body": [
+			"notify('${1:text}')",
+			"$0"
+		],
+		"description": "显示角落通知"
 	}
 }
