@@ -14,7 +14,7 @@ class Hover{
         const word        = document.getText(document.getWordRangeAtPosition(position));
 
         if (word in this.api) {
-            return new vscode.Hover(word + ":" + this.api[word]["zh-cn"]);
+            return new vscode.Hover(word + ":" + this.api[word][vscode.env.language]);
         }
     }
 }
