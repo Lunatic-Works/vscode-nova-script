@@ -1,8 +1,4 @@
 {
-    "//script_loader":
-    {
-        "sample": "Assets/Resources/Scenarios/tut01.txt"
-    },
     "label":
     {
         "zh-cn": "节点名称(key, display_name)",
@@ -32,11 +28,6 @@
     {
         "zh-cn": "设置结局"
     },
-
-    "//graphics":
-    {
-        "sample": "Assets/Resources/Scenarios/tut02.txt"
-    },
     "show":
     {
         "zh-cn": "显示图像(无动画)"
@@ -44,11 +35,6 @@
     "hide":
     {
         "zh-cn": "隐藏图像(无动画)"
-    },
-
-    "//audio":
-    {
-        "sample": "Assets/Resources/Scenarios/tut03.txt"
     },
     "sound":
     {
@@ -73,12 +59,6 @@
     "fade_out":
     {
         "zh-cn": "anim:动画淡出音乐"
-    },
-
-
-    "//dialogue":
-    {
-        "sample": "Assets/Resources/Scenarios/tut04.txt"
     },
     "stop_auto_ff":
     {
@@ -115,11 +95,6 @@
     "box_hide_show":
     {
         "zh-cn": "隐藏对话框一段时间后再出现"
-    },
-
-    "//Animation":
-    {
-        "sample": "Assets/Resources/Scenarios/tut05.txt"
     },
     "anim":
     {
@@ -178,24 +153,9 @@
     {
         "zh-cn": "特效"
     },
-    
-    "//video":
-    {
-        "sample": "Assets/Resources/Scenarios/test_video.txt"
-    },
     "video_play_custom":
     {
         "zh-cn": "播放视频"
-    },
-
-    "//variables":
-    {
-        "sample": "Assets/Resources/Scenarios/test_variables.txt & test_global_variable.txt"
-    },
-    
-    "//alert":
-    {
-        "sample": "Assets/Resources/Scenarios/tut04.txt"
     },
     "alert":
     {
@@ -204,11 +164,6 @@
     "notify":
     {
         "zh-cn": "角落显示通知"
-    },
-    
-    "//auto_voice":
-    {
-        "sample": "Assets/Resources/Scenarios/ch1.txt .. ch4.txt"
     },
     "auto_voice_on":
     {
