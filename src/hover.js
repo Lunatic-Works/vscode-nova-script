@@ -14,7 +14,7 @@ class Hover{
 
         var def = this.api[word];
         if (def) {
-            var content = def[vscode.env.languag];
+            var content = def[vscode.env.language];
             if (!content) {
                 content = def["zh-cn"];
             }
