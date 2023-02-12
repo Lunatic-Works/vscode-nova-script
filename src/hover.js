@@ -10,11 +10,15 @@ class Hover{
     }
 
     provideHover(document, position, token) {
-        const fileName    = document.fileName;
         const word        = document.getText(document.getWordRangeAtPosition(position));
 
-        if (word in this.api) {
-            return new vscode.Hover(word + ":" + this.api[word][vscode.env.language]);
+        var def = this.api[word];
+        if (def) {
+            var content = def[vscode.env.languag];
+            if (!content) {
+                content = def["zh-cn"];
+            }
+            return new vscode.Hover(word + ":" + content);
         }
     }
 }
