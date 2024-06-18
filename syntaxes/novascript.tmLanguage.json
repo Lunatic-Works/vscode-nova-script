@@ -1,28 +1,31 @@
 {
     "$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
-    "name": "Nova Script",
+    "name": "NovaScript",
     "patterns": [
         {
             "include": "#character-quote"
         },
         {
-            "include": "#fast-code-block"
+            "include": "#eager-execution-block"
         },
         {
-            "include": "#lazy-code-block"
+            "include": "#lazy-execution-block"
         }
     ],
     "repository": {
         "character-quote": {
-            "begin": "^(.*?)((\\:|：){2})(“)",
+            "begin": "^([^/：:]*)(//([^：:]*))?(：：|::)(“)",
             "beginCaptures": {
                 "1": {
                     "name": "markup.heading.charactername.novascript"
                 },
                 "2": {
-                    "name": "keyword.characterquote.novascript"
+                    "name": "markup.heading.characterhiddenname.novascript"
                 },
                 "4": {
+                    "name": "keyword.characterquote.novascript"
+                },
+                "5": {
                     "name": "punctuation.definition.string.begin.novascript"
                 }
             },
@@ -34,7 +37,7 @@
                 }
             }
         },
-        "fast-code-block": {
+        "eager-execution-block": {
             "begin": "(@)<\\|",
             "beginCaptures": {
                 "0": {
@@ -57,7 +60,7 @@
                 }
             ]
         },
-        "lazy-code-block": {
+        "lazy-execution-block": {
             "begin": "^<\\|",
             "beginCaptures": {
                 "0": {
