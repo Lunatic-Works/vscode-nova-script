@@ -1,10 +1,10 @@
 {
     "name": "vscode-nova-script",
-    "displayName": "Nova Script for VS Code",
-    "description": "Syntax highlighting and intellisense for scripts in Nova AVG Engine",
+    "displayName": "NovaScript for VS Code",
+    "description": "Syntax highlighting and intellisense for scripts in visual novel framework Nova",
     "repository": {
         "type": "git",
-        "url": "https://github.com/zhouhaoyu/vscode-nova-script.git"
+        "url": "https://github.com/Lunatic-Works/vscode-nova-script.git"
     },
     "publisher": "zhouhy",
     "version": "0.0.1",
@@ -22,7 +22,7 @@
     "contributes": {
         "languages": [{
             "id": "novascript",
-            "aliases": ["Nova Script", "novascript"],
+            "aliases": ["NovaScript", "novascript"],
             "extensions": [".nova.txt"],
             "configuration": "./language-configuration.json"
         }],

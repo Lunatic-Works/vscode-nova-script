@@ -10,7 +10,7 @@ class Hover{
     }
 
     provideHover(document, position, token) {
-        const word        = document.getText(document.getWordRangeAtPosition(position));
+        const word = document.getText(document.getWordRangeAtPosition(position));
 
         var def = this.api[word];
         if (def) {
@@ -18,7 +18,7 @@ class Hover{
             if (!content) {
                 content = def["zh-cn"];
             }
-            return new vscode.Hover(word + ":" + content);
+            return new vscode.Hover(word + ": " + content);
         }
     }
 }

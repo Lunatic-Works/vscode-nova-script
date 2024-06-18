@@ -1,17 +1,17 @@
 {
-    "fast-code-block": {
+    "eager-execution-block": {
         "prefix": "ff",
         "body": [
             "@<| $0 |>"
         ],
-        "description": "快速求值代码块（载入脚本时立刻执行）"
+        "description": "提前代码块（载入脚本时立刻执行）"
     },
-    "lazy-code-block": {
+    "lazy-execution-block": {
         "prefix": "ll",
         "body": [
             "<| $0 |>"
         ],
-        "description": "懒惰求值代码块（播放对话时执行）"
+        "description": "延迟代码块（播放对话时执行）"
     },
     "dialogue": {
         "prefix": "dd",

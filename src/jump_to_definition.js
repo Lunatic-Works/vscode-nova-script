@@ -9,8 +9,8 @@ class Definition{
         this.api = JSON.parse(api_json);
     }
 
-    provideDefinition (document, position, token) {
-        const word        = document.getText(document.getWordRangeAtPosition(position));
+    provideDefinition(document, position, token) {
+        const word = document.getText(document.getWordRangeAtPosition(position));
         return null;
     }
 }
