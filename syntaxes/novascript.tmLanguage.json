@@ -1,82 +1,82 @@
 {
-	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
-	"name": "Nova Script",
-	"patterns": [
-		{
-			"include": "#character-quote"
-		},
-		{
-			"include": "#fast-code-block"
-		},
-		{
-			"include": "#lazy-code-block"
-		}
-	],
-	"repository": {
-		"character-quote": {
-			"begin": "^(.*?)((\\:|：){2})(“)",
-			"beginCaptures": {
-				"1": {
-					"name": "markup.heading.charactername.novascript"
-				},
-				"2": {
-					"name": "keyword.characterquote.novascript"
-				},
-				"4": {
-					"name": "punctuation.definition.string.begin.novascript"
-				}
-			},
-			"contentName": "string.quoted.block.novascript",
-			"end": "”",
-			"endCaptures": {
-				"0": {
-					"name": "punctuation.definition.string.end.novascript"
-				}
-			}
-		},
-		"fast-code-block": {
-			"begin": "(@)<\\|",
-			"beginCaptures": {
-				"0": {
-					"name": "keyword.control.block.begin.novascript"
-				},
-				"1": {
-					"name": "keyword.other.fastblock.begin.novascript"
-				}
-			},
-			"contentName": "meta.embedded.block.lua",
-			"end": "\\|>",
-			"endCaptures": {
-				"0": {
-					"name": "keyword.control.block.end.novascript"
-				}
-			},
-			"patterns": [
-				{
-					"include": "source.lua"
-				}
-			]
-		},
-		"lazy-code-block": {
-			"begin": "^<\\|",
-			"beginCaptures": {
-				"0": {
-					"name": "keyword.control.block.begin.novascript"
-				}
-			},
-			"contentName": "meta.embedded.block.lua",
-			"end": "\\|>",
-			"endCaptures": {
-				"0": {
-					"name": "keyword.control.block.end.novascript"
-				}
-			},
-			"patterns": [
-				{
-					"include": "source.lua"
-				}
-			]
-		}
-	},
-	"scopeName": "text.novascript"
+    "$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+    "name": "Nova Script",
+    "patterns": [
+        {
+            "include": "#character-quote"
+        },
+        {
+            "include": "#fast-code-block"
+        },
+        {
+            "include": "#lazy-code-block"
+        }
+    ],
+    "repository": {
+        "character-quote": {
+            "begin": "^(.*?)((\\:|：){2})(“)",
+            "beginCaptures": {
+                "1": {
+                    "name": "markup.heading.charactername.novascript"
+                },
+                "2": {
+                    "name": "keyword.characterquote.novascript"
+                },
+                "4": {
+                    "name": "punctuation.definition.string.begin.novascript"
+                }
+            },
+            "contentName": "string.quoted.block.novascript",
+            "end": "”",
+            "endCaptures": {
+                "0": {
+                    "name": "punctuation.definition.string.end.novascript"
+                }
+            }
+        },
+        "fast-code-block": {
+            "begin": "(@)<\\|",
+            "beginCaptures": {
+                "0": {
+                    "name": "keyword.control.block.begin.novascript"
+                },
+                "1": {
+                    "name": "keyword.other.fastblock.begin.novascript"
+                }
+            },
+            "contentName": "meta.embedded.block.lua",
+            "end": "\\|>",
+            "endCaptures": {
+                "0": {
+                    "name": "keyword.control.block.end.novascript"
+                }
+            },
+            "patterns": [
+                {
+                    "include": "source.lua"
+                }
+            ]
+        },
+        "lazy-code-block": {
+            "begin": "^<\\|",
+            "beginCaptures": {
+                "0": {
+                    "name": "keyword.control.block.begin.novascript"
+                }
+            },
+            "contentName": "meta.embedded.block.lua",
+            "end": "\\|>",
+            "endCaptures": {
+                "0": {
+                    "name": "keyword.control.block.end.novascript"
+                }
+            },
+            "patterns": [
+                {
+                    "include": "source.lua"
+                }
+            ]
+        }
+    },
+    "scopeName": "text.novascript"
 }

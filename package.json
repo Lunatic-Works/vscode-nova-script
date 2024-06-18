@@ -30,19 +30,19 @@
             "language": "novascript",
             "scopeName": "text.novascript",
             "path": "./syntaxes/novascript.tmLanguage.json",
-			"embeddedLanguages": {
-                "meta.embedded.block.lua": "lua"				
-			}
+            "embeddedLanguages": {
+                "meta.embedded.block.lua": "lua"
+            }
         }],
         "snippets": [
-			{
-				"language": "lua",
-				"path": "./snippets/lua.json"
-			},
-			{
-				"language": "novascript",
-				"path": "./snippets/novascript.json"
-			}
-		]
+            {
+                "language": "lua",
+                "path": "./snippets/lua.json"
+            },
+            {
+                "language": "novascript",
+                "path": "./snippets/novascript.json"
+            }
+        ]
     }
 }

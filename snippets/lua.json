@@ -1,290 +1,290 @@
 {
-	"box_full": {
-		"prefix": "box",
-		"body": [
-			"box_${1|buttom,full,top|}()",
-			"$0"
-		],
-		"description": "设置对话框位置（三选一）"
-	},
-	"new_page": {
-		"prefix": "new_page",
-		"body": [
-			"new_page()",
-			"$0"
-		],
-		"description": "清空当前页"
-	},
-	"new_line": {
-		"prefix": "new_line",
-		"body": [
-			"new_line()",
-			"$0"
-		],
-		"description": "换行"
-	},
-	"text_delay": {
-		"prefix": "text_delay",
-		"body": [
-			"text_delay(${1:time})",
-			"$0"
-		],
-		"description": "延迟文本出现"
-	},
-	"set_dialogue_update_mode": {
-		"prefix": "set_dialogue_update_mode",
-		"body": [
-			"set_dialogue_update_mode('${1|append,overwrite|}')",
-			"$0"
-		],
-		"description": "设置对话框更新模式（二选一）"
-	},
-	"set_dialogue_box_offset": {
-		"prefix": "set_dialogue_box_offset",
-		"body": [
-			"set_dialogue_box_offset(${1:offset_left}, ${2:offset_right}, ${3:offset_top}, ${4:offset_bottom})",
-			"$0"
-		],
-		"description": "设置对话框位置"
-	},
-	"show": {
-		"prefix": "show",
-		"body": [
-			"show('${1|axue,lexuan|}', '${2|c,l,r|}${3|m,f,n|}')",
-			"$0"
-		],
-		"description": "显示角色"
-	},
-	"show_xys": {
-		"prefix": "show_xys",
-		"body": [
-			"show_xys('${1|axue,lexuan|}', ${2:x}, ${3:y}, ${4:scale})",
-			"$0"
-		],
-		"description": "在指定坐标、以指定缩放显示角色"
-	},
-	"hide": {
-		"prefix": "hide",
-		"body": [
-			"hide('${1|axue,lexuan|}')",
-			"$0"
-		],
-		"description": "隐藏角色"
-	},
-	"move": {
-		"prefix": "move",
-		"body": [
-			"move('${1|axue,lexuan|}', '${2|c,l,r|}${3|m,f,n|}', ${3:start_slope}, ${4:target_slope}, ${5:duration})",
-			"$0"
-		],
-		"description": "移动角色"
-	},
-	"move_xys": {
-		"prefix": "move_xys",
-		"body": [
-			"move('${1|axue,lexuan|}', ${2:x}, ${3:y}, ${4:scale}, ${5:start_slope}, ${6:target_slope}, ${7:duration})",
-			"$0"
-		],
-		"description": "向指定坐标、指定缩放移动角色"
-	},
-	"label": {
-		"prefix": "label",
-		"body": [
-			"label('${1:name}', '${2:description}'",
-			"$0"
-		],
-		"description": "定义一个标签"
-	},
-	"jump_to": {
-		"prefix": "jump_to",
-		"body": [
-			"jump_to('${1:name}')",
-			"$0"
-		],
-		"description": "跳转到指定标签"
-	},
-	"branch": {
-		"prefix": "branch",
-		"body": [
-			"branch('${1:dest}')",
-			"$0"
-		],
-		"description": "设置剧情分支"
-	},
-	"is_start": {
-		"prefix": "is_start",
-		"body": [
-			"is_start('${1:name}')",
-			"$0"
-		],
-		"description": "将指定标签定义为游戏起点之一"
-	},
-	"is_default_start": {
-		"prefix": "is_default_start",
-		"body": [
-			"is_default_start('${1:name}')",
-			"$0"
-		],
-		"description": "将指定标签定义为游戏默认起点"
-	},
-	"is_unlocked_start": {
-		"prefix": "is_unlocked_start",
-		"body": [
-			"is_unlocked_start('${1:name}')",
-			"$0"
-		],
-		"description": "设置一开始就解锁的开始节点"
-	},
-	"is_end": {
-		"prefix": "is_end",
-		"body": [
-			"is_end('${1:name}')",
-			"$0"
-		],
-		"description": "将指定标签定义为游戏结局点"
-	},
-	"bg": {
-		"prefix": "bg",
-		"body": [
-			"bg('${1:image_name}')",
-			"$0"
-		],
-		"description": "设置背景图"
-	},
-	"bgm": {
-		"prefix": "bgm",
-		"body": [
-			"bgm('${1:audio_name}')",
-			"$0"
-		],
-		"description": "设置背景音乐"
-	},
-	"bgm_stop": {
-		"prefix": "bgm_stop",
-		"body": [
-			"bgm_stop()",
-			"$0"
-		],
-		"description": "停止背景音乐"
-	},
-	"sound": {
-		"prefix": "sound",
-		"body": [
-			"sound('${1:audio_name}', ${2:position}, ${3:volume})",
-			"$0"
-		],
-		"description": "播放声音"
-	},
-	"say": {
-		"prefix": "say",
-		"body": [
-			"say(${1:obj}, '${2:audio_name}', ${3:delay}, ${4:override_auto_voice})",
-			"$0"
-		],
-		"description": "播放语音"
-	},
-	"play": {
-		"prefix": "play",
-		"body": [
-			"play(${1:obj}, '${2:audio_name}', ${3:volume})",
-			"$0"
-		],
-		"description": "播放音乐"
-	},
-	"volume": {
-		"prefix": "volume",
-		"body": [
-			"volume(${1:obj}, ${2:value}, ${3:duration})",
-			"$0"
-		],
-		"description": "动画改变音量"
-	},
-	"fade_in": {
-		"prefix": "fade_in",
-		"body": [
-			"fade_in(${1:obj}, '${2:audio_name}', ${3:volume}, ${4:duration})",
-			"$0"
-		],
-		"description": "动画淡入音乐"
-	},
-	"fade_out": {
-		"prefix": "fade_out",
-		"body": [
-			"fade_out(${1:obj}, ${2:duration})",
-			"$0"
-		],
-		"description": "动画淡出音乐"
-	},
-	"wait": {
-		"prefix": "wait",
-		"body": [
-			"wait(${1:duration})",
-			"$0"
-		],
-		"description": "动画等待"
-	},
-	"wait_all": {
-		"prefix": "wait_all",
-		"body": [
-			"wait_all(${1:wrap_anim})",
-			"$0"
-		],
-		"description": "动画等待另一组动画播放结束"
-	},
-	"action": {
-		"prefix": "action",
-		"body": [
-			"action(${1:function_name}, ${2:params})",
-			"$0"
-		],
-		"description": "执行指定函数，第一参数为函数名，之后为函数的参数，比如anim:action(show, bg, 'room')"
-	},
-	"tint": {
-		"prefix": "tint",
-		"body": [
-			"tint(${1:obj}, ${2:color}, ${3:duration}, ${4:easing})",
-			"$0"
-		],
-		"description": "动画改变颜色"
-	},
-	"trans": {
-		"prefix": "trans",
-		"body": [
-			"trans(${1:obj}, '${2:image_name}', ${3:shader_layer}, ${4:times}, ${5:properties}, ${6:color2})",
-			"$0"
-		],
-		"description": "第一类转场"
-	},
-	"trans2": {
-		"prefix": "trans2",
-		"body": [
-			"trans2(${1:obj}, '${2:image_name}', ${3:shader_layer}, ${4:times}, ${5:properties}, ${6:times2}, ${7:properties2}, ${8:color2})",
-			"$0"
-		],
-		"description": "第二类转场"
-	},
-	"video_play_custom": {
-		"prefix": "video_play_custom",
-		"body": [
-			"video_play_custom('${1:video_name}')",
-			"$0"
-		],
-		"description": "播放视频"
-	},
-	"alert": {
-		"prefix": "alert",
-		"body": [
-			"alert('${1:text}')",
-			"$0"
-		],
-		"description": "显示警告弹窗"
-	},
-	"notify": {
-		"prefix": "notify",
-		"body": [
-			"notify('${1:text}')",
-			"$0"
-		],
-		"description": "显示角落通知"
-	}
+    "box_full": {
+        "prefix": "box",
+        "body": [
+            "box_${1|buttom,full,top|}()",
+            "$0"
+        ],
+        "description": "设置对话框位置（三选一）"
+    },
+    "new_page": {
+        "prefix": "new_page",
+        "body": [
+            "new_page()",
+            "$0"
+        ],
+        "description": "清空当前页"
+    },
+    "new_line": {
+        "prefix": "new_line",
+        "body": [
+            "new_line()",
+            "$0"
+        ],
+        "description": "换行"
+    },
+    "text_delay": {
+        "prefix": "text_delay",
+        "body": [
+            "text_delay(${1:time})",
+            "$0"
+        ],
+        "description": "延迟文本出现"
+    },
+    "set_dialogue_update_mode": {
+        "prefix": "set_dialogue_update_mode",
+        "body": [
+            "set_dialogue_update_mode('${1|append,overwrite|}')",
+            "$0"
+        ],
+        "description": "设置对话框更新模式（二选一）"
+    },
+    "set_dialogue_box_offset": {
+        "prefix": "set_dialogue_box_offset",
+        "body": [
+            "set_dialogue_box_offset(${1:offset_left}, ${2:offset_right}, ${3:offset_top}, ${4:offset_bottom})",
+            "$0"
+        ],
+        "description": "设置对话框位置"
+    },
+    "show": {
+        "prefix": "show",
+        "body": [
+            "show('${1|axue,lexuan|}', '${2|c,l,r|}${3|m,f,n|}')",
+            "$0"
+        ],
+        "description": "显示角色"
+    },
+    "show_xys": {
+        "prefix": "show_xys",
+        "body": [
+            "show_xys('${1|axue,lexuan|}', ${2:x}, ${3:y}, ${4:scale})",
+            "$0"
+        ],
+        "description": "在指定坐标、以指定缩放显示角色"
+    },
+    "hide": {
+        "prefix": "hide",
+        "body": [
+            "hide('${1|axue,lexuan|}')",
+            "$0"
+        ],
+        "description": "隐藏角色"
+    },
+    "move": {
+        "prefix": "move",
+        "body": [
+            "move('${1|axue,lexuan|}', '${2|c,l,r|}${3|m,f,n|}', ${3:start_slope}, ${4:target_slope}, ${5:duration})",
+            "$0"
+        ],
+        "description": "移动角色"
+    },
+    "move_xys": {
+        "prefix": "move_xys",
+        "body": [
+            "move('${1|axue,lexuan|}', ${2:x}, ${3:y}, ${4:scale}, ${5:start_slope}, ${6:target_slope}, ${7:duration})",
+            "$0"
+        ],
+        "description": "向指定坐标、指定缩放移动角色"
+    },
+    "label": {
+        "prefix": "label",
+        "body": [
+            "label('${1:name}', '${2:description}'",
+            "$0"
+        ],
+        "description": "定义一个标签"
+    },
+    "jump_to": {
+        "prefix": "jump_to",
+        "body": [
+            "jump_to('${1:name}')",
+            "$0"
+        ],
+        "description": "跳转到指定标签"
+    },
+    "branch": {
+        "prefix": "branch",
+        "body": [
+            "branch('${1:dest}')",
+            "$0"
+        ],
+        "description": "设置剧情分支"
+    },
+    "is_start": {
+        "prefix": "is_start",
+        "body": [
+            "is_start('${1:name}')",
+            "$0"
+        ],
+        "description": "将指定标签定义为游戏起点之一"
+    },
+    "is_default_start": {
+        "prefix": "is_default_start",
+        "body": [
+            "is_default_start('${1:name}')",
+            "$0"
+        ],
+        "description": "将指定标签定义为游戏默认起点"
+    },
+    "is_unlocked_start": {
+        "prefix": "is_unlocked_start",
+        "body": [
+            "is_unlocked_start('${1:name}')",
+            "$0"
+        ],
+        "description": "设置一开始就解锁的开始节点"
+    },
+    "is_end": {
+        "prefix": "is_end",
+        "body": [
+            "is_end('${1:name}')",
+            "$0"
+        ],
+        "description": "将指定标签定义为游戏结局点"
+    },
+    "bg": {
+        "prefix": "bg",
+        "body": [
+            "bg('${1:image_name}')",
+            "$0"
+        ],
+        "description": "设置背景图"
+    },
+    "bgm": {
+        "prefix": "bgm",
+        "body": [
+            "bgm('${1:audio_name}')",
+            "$0"
+        ],
+        "description": "设置背景音乐"
+    },
+    "bgm_stop": {
+        "prefix": "bgm_stop",
+        "body": [
+            "bgm_stop()",
+            "$0"
+        ],
+        "description": "停止背景音乐"
+    },
+    "sound": {
+        "prefix": "sound",
+        "body": [
+            "sound('${1:audio_name}', ${2:position}, ${3:volume})",
+            "$0"
+        ],
+        "description": "播放声音"
+    },
+    "say": {
+        "prefix": "say",
+        "body": [
+            "say(${1:obj}, '${2:audio_name}', ${3:delay}, ${4:override_auto_voice})",
+            "$0"
+        ],
+        "description": "播放语音"
+    },
+    "play": {
+        "prefix": "play",
+        "body": [
+            "play(${1:obj}, '${2:audio_name}', ${3:volume})",
+            "$0"
+        ],
+        "description": "播放音乐"
+    },
+    "volume": {
+        "prefix": "volume",
+        "body": [
+            "volume(${1:obj}, ${2:value}, ${3:duration})",
+            "$0"
+        ],
+        "description": "动画改变音量"
+    },
+    "fade_in": {
+        "prefix": "fade_in",
+        "body": [
+            "fade_in(${1:obj}, '${2:audio_name}', ${3:volume}, ${4:duration})",
+            "$0"
+        ],
+        "description": "动画淡入音乐"
+    },
+    "fade_out": {
+        "prefix": "fade_out",
+        "body": [
+            "fade_out(${1:obj}, ${2:duration})",
+            "$0"
+        ],
+        "description": "动画淡出音乐"
+    },
+    "wait": {
+        "prefix": "wait",
+        "body": [
+            "wait(${1:duration})",
+            "$0"
+        ],
+        "description": "动画等待"
+    },
+    "wait_all": {
+        "prefix": "wait_all",
+        "body": [
+            "wait_all(${1:wrap_anim})",
+            "$0"
+        ],
+        "description": "动画等待另一组动画播放结束"
+    },
+    "action": {
+        "prefix": "action",
+        "body": [
+            "action(${1:function_name}, ${2:params})",
+            "$0"
+        ],
+        "description": "执行指定函数，第一参数为函数名，之后为函数的参数，比如anim:action(show, bg, 'room')"
+    },
+    "tint": {
+        "prefix": "tint",
+        "body": [
+            "tint(${1:obj}, ${2:color}, ${3:duration}, ${4:easing})",
+            "$0"
+        ],
+        "description": "动画改变颜色"
+    },
+    "trans": {
+        "prefix": "trans",
+        "body": [
+            "trans(${1:obj}, '${2:image_name}', ${3:shader_layer}, ${4:times}, ${5:properties}, ${6:color2})",
+            "$0"
+        ],
+        "description": "第一类转场"
+    },
+    "trans2": {
+        "prefix": "trans2",
+        "body": [
+            "trans2(${1:obj}, '${2:image_name}', ${3:shader_layer}, ${4:times}, ${5:properties}, ${6:times2}, ${7:properties2}, ${8:color2})",
+            "$0"
+        ],
+        "description": "第二类转场"
+    },
+    "video_play_custom": {
+        "prefix": "video_play_custom",
+        "body": [
+            "video_play_custom('${1:video_name}')",
+            "$0"
+        ],
+        "description": "播放视频"
+    },
+    "alert": {
+        "prefix": "alert",
+        "body": [
+            "alert('${1:text}')",
+            "$0"
+        ],
+        "description": "显示警告弹窗"
+    },
+    "notify": {
+        "prefix": "notify",
+        "body": [
+            "notify('${1:text}')",
+            "$0"
+        ],
+        "description": "显示角落通知"
+    }
 }
